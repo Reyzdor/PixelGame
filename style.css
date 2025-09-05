@@ -78,11 +78,12 @@
 
 .sky1 {
     position: relative;
+    object-fit: cover;
     top: -350px;
     right: 400px;
     margin: 0 auto;
     animation: sky1 120s infinite normal ease-in-out;
-    z-index: 1;
+    z-index: 4;
     width: 150px;
 }
 
@@ -102,7 +103,7 @@
     right: -200px;
     margin: 0 auto;
     animation: sky2 120s infinite normal ease-in-out;
-    z-index: 1;
+    z-index: 4;
     width: 150px;
 }
 
@@ -120,11 +121,13 @@
     overflow: hidden;
 }
 
-.mountain1 {
-    display: flex;
-    overflow: hidden;
+.mountain2 {
     position: absolute;
-    top: -0px;
-    right: 0px;
-    width: 1500px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    top: auto;
+    right: auto;
 }
