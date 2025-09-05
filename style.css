@@ -74,3 +74,37 @@
     }
 }
 
+
+.sky1 {
+    position: relative;
+    top: -430px;
+    right: 870px;
+    margin: 0 auto;
+    animation: sky1 30s infinite normal ease-in-out;
+}
+
+@keyframes sky1 {
+    0% {
+        transform: translateX(-250px));
+    }
+    100% {
+        transform: translateX(1750px);
+    }
+}
+
+.sky5 {
+    position: relative;
+    top: -400px;
+    left: 600px;
+    margin: 0 auto;
+    animation: sky5 30s infinite normal ease-in-out;
+}
+
+@keyframes sky5 {
+    0% {
+        transform: translateX(160px);
+    }
+    100% {
+        transform: translateX(-1400px);
+    }
+}
