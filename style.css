@@ -1,7 +1,7 @@
 @import url('/font/JorelMinesweeperPlus-Regular.otf');
 
 * {
-    background-color: #00BFFF;
+    background-color: #44a8fe;
 }
 
 @font-face {
@@ -77,10 +77,12 @@
 
 .sky1 {
     position: relative;
-    top: -430px;
-    right: 870px;
+    top: -350px;
+    right: 400px;
     margin: 0 auto;
-    animation: sky1 30s infinite normal ease-in-out;
+    animation: sky1 50s infinite normal ease-in-out;
+    z-index: 1;
+    width: 150px;
 }
 
 @keyframes sky1 {
@@ -92,19 +94,23 @@
     }
 }
 
-.sky5 {
+
+.sky2 {
     position: relative;
-    top: -400px;
-    left: 600px;
+    top: -415px;
+    right: -200px;
     margin: 0 auto;
-    animation: sky5 30s infinite normal ease-in-out;
+    animation: sky2 50s infinite normal ease-in-out;
+    z-index: 1;
+    width: 150px;
 }
 
-@keyframes sky5 {
+@keyframes sky2 {
     0% {
-        transform: translateX(160px);
+        transform: translateX(-250px));
     }
     100% {
-        transform: translateX(-1400px);
+        transform: translateX(1750px);
     }
 }
+
