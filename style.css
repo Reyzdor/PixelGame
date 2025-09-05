@@ -1,0 +1,76 @@
+@import url('/font/JorelMinesweeperPlus-Regular.otf');
+
+* {
+    background-color: #00BFFF;
+}
+
+@font-face {
+    font-family: 'JorelMinesweeperPlus';
+    src: url('/font/JorelMinesweeperPlus-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.greeting {
+    font-family: 'JorelMinesweeperPlus', 'Courier New', monospace;
+    src: url('/font/JorelMinesweeperPlus-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+    font-size: 50px;
+    text-shadow: 
+            -1.5px -1.5px 0 #FFFFFF; 
+            1.5px -1.5px 0 #FFFFFF; 
+            -1.5px 1.5px 0 #FFFFFF;   
+            1.5px 1.5px 0 #FFFFFF;     
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.bird {
+    position: relative;
+    top: -180px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+}
+
+.start {
+    font-family: 'JorelMinesweeperPlus', 'Courier New', monospace;
+    src: url('/font/JorelMinesweeperPlus-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    color: #ededed;
+    font-size: 20px;
+    text-shadow: 
+            -1px -1px 0 #000000,  
+            1px -1px 0 #000000,  
+            -1px 1px 0 #000000,    
+            1px 1px 0 #000000;     
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+    animation: jump 1s infinite alternate ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
