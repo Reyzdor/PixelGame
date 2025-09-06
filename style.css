@@ -23,21 +23,41 @@
         position: relative;
     }
 
+    :root {
+    --rocket-core: #080a08;
+    --rocket-mid: #080a09;   
+    --rocket-edge: #030403;  
+    --rocket-glow: #212221;  
+    }
+
     .greeting {
-        font-family: 'JorelMinesweeperPlus', 'Courier New', monospace;
-        src: url('/font/JorelMinesweeperPlus-Regular.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-        color: #000000;
-        font-size: 50px;
-        text-shadow: 
-                -1.5px -1.5px 0 #FFFFFF; 
-                1.5px -1.5px 0 #FFFFFF; 
-                -1.5px 1.5px 0 #FFFFFF;   
-                1.5px 1.5px 0 #FFFFFF;     
-        text-align: center;
-        width: 100%;
-        z-index: 6;
+    font-family: 'JorelMinesweeperPlus', 'Courier New', monospace;
+    src: url('/font/JorelMinesweeperPlus-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    z-index: 6;
+    
+    background: linear-gradient(
+        to right,
+        var(--rocket-core) 0%,
+        var(--rocket-mid) 30%,
+        var(--rocket-edge) 70%,
+        var(--rocket-edge) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    text-shadow: 
+        -1.5px -1.5px 0 #FFFFFF, 
+        1.5px -1.5px 0 #FFFFFF, 
+        -1.5px 1.5px 0 #FFFFFF,   
+        1.5px 1.5px 0 #FFFFFF,
+        0 0 10px var(--rocket-glow), 
+        0 0 20px var(--rocket-core); 
     }
 
     .bird {
