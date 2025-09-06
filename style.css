@@ -131,7 +131,18 @@
     object-fit: cover;
     top: auto;
     right: auto;
+    z-index: 3;
 }
 
-/* Завтра перекрыть divider - гору
-исправить лого
+.group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    top: auto;
+    right: auto;
+    z-index:4;
+}
+
