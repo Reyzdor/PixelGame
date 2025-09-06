@@ -83,7 +83,7 @@
         top: -350px;
         right: 400px;
         margin: 0 auto;
-        animation: sky1 120s infinite normal ease-in-out;
+        animation: sky1 240s infinite normal ease-in-out;
         z-index: 4;
         width: 150px;
     }
@@ -103,7 +103,7 @@
         top: -410px;
         right: -200px;
         margin: 0 auto;
-        animation: sky2 120s infinite normal ease-in-out;
+        animation: sky2 240s infinite normal ease-in-out;
         z-index: 4;
         width: 150px;
     }
@@ -129,20 +129,5 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    top: auto;
-    right: auto;
     z-index: 3;
 }
-
-.group {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    top: auto;
-    right: auto;
-    z-index:4;
-}
-
