@@ -2,6 +2,7 @@
 
     * {
         background-color: #44a8fe;
+        overflow: hidden;
     }
 
     @font-face {
