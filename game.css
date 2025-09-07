@@ -1,0 +1,69 @@
+@import url('/font/JorelMinesweeperPlus-Regular.otf');
+
+* {     
+    background-color: #44a8fe;     
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ground {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: flex-end;
+}
+
+#ground2 {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    align-items: flex-end;
+}
+
+#green-cont {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 64px; 
+    left: 0;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+#ground img:not(#brown1),
+#ground2 img:not(#brown22) {
+    width: 98px;
+    height: 32px;
+    display: block;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#brown1,
+#brown22 {
+    width: 85px;
+    height: 32px;
+    display: block;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#green-cont img {
+    width: 100px;
+    height: 62px;
+    display: block;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
