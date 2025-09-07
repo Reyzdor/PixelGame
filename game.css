@@ -50,7 +50,7 @@
 #brown1,
 #brown22 {
     width: 85px;
-    height: 32px;
+    height: 22px;
     display: block;
     flex-shrink: 0;
     object-fit: cover;
@@ -66,4 +66,15 @@
     object-fit: cover;
     margin: 0;
     padding: 0;
+}
+
+.pos-bird {
+    padding: 300px 100px;
+    position: sticky;
+}
+
+.bird {
+    width: 120px;
+    height: 120px;
+    position: sticky;
 }
