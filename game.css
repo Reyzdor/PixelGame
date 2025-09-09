@@ -21,7 +21,7 @@
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: 32px;
+    bottom: 22px;
     left: 0;
     align-items: flex-end;
 }
@@ -30,7 +30,7 @@
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: 64px; 
+    bottom: 52px; 
     left: 0;
     align-items: flex-end;
     z-index: 10;
@@ -70,7 +70,9 @@
 
 .pos-bird {
     padding: 300px 100px;
-    position: sticky;
+    position: absolute;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .bird {

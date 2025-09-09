@@ -10,3 +10,11 @@ function playSound() {
     
 }
 
+function moveBird() {
+    const myBird = document.getElementById('moveBird');
+    myBird.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            
+        }
+    })
+}
